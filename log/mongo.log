@@ -1,0 +1,51 @@
+2016-09-14T22:45:33.854+0700 I CONTROL  [initandlisten] MongoDB starting : pid=18196 port=27017 dbpath=F:\MongoStore\data 64-bit host=HP
+2016-09-14T22:45:33.855+0700 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2016-09-14T22:45:33.855+0700 I CONTROL  [initandlisten] db version v3.2.9
+2016-09-14T22:45:33.856+0700 I CONTROL  [initandlisten] git version: 22ec9e93b40c85fc7cae7d56e7d6a02fd811088c
+2016-09-14T22:45:33.856+0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1p-fips 9 Jul 2015
+2016-09-14T22:45:33.856+0700 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-09-14T22:45:33.856+0700 I CONTROL  [initandlisten] modules: none
+2016-09-14T22:45:33.856+0700 I CONTROL  [initandlisten] build environment:
+2016-09-14T22:45:33.856+0700 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2016-09-14T22:45:33.856+0700 I CONTROL  [initandlisten]     distarch: x86_64
+2016-09-14T22:45:33.856+0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2016-09-14T22:45:33.856+0700 I CONTROL  [initandlisten] options: { config: "F:\MongoStore\config.txt", storage: { dbPath: "F:\MongoStore\data" }, systemLog: { destination: "file", path: "F:\MongoStore\log\mongo.log" } }
+2016-09-14T22:45:33.878+0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2016-09-14T22:45:35.166+0700 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2016-09-14T22:45:35.166+0700 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'F:/MongoStore/data/diagnostic.data'
+2016-09-14T22:45:35.578+0700 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-09-14T22:50:53.665+0700 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:19986 #1 (1 connection now open)
+2016-09-14T22:50:53.732+0700 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:19987 #2 (2 connections now open)
+2016-09-14T22:51:09.420+0700 I NETWORK  [conn2] end connection 127.0.0.1:19987 (1 connection now open)
+2016-09-14T22:51:09.420+0700 I NETWORK  [conn1] end connection 127.0.0.1:19986 (1 connection now open)
+2016-09-14T22:51:19.046+0700 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:19995 #3 (1 connection now open)
+2016-09-14T22:51:19.086+0700 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:19996 #4 (2 connections now open)
+2016-09-14T22:52:05.600+0700 I COMMAND  [conn3] insert MOEdb.temp ninserted:1 keyUpdates:0 writeConflicts:0 numYields:0 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 1, W: 1 } }, Collection: { acquireCount: { w: 1 } } } 184ms
+2016-09-14T22:52:05.601+0700 I COMMAND  [conn3] CMD: drop MOEdb.temp
+2016-09-14T22:53:27.140+0700 W COMMAND  [conn3] the autoIndexId option is deprecated and will be removed in a future release
+2016-09-14T22:53:27.332+0700 I COMMAND  [conn3] command MOEdb.Test command: create { create: "Test", autoIndexId: true } keyUpdates:0 writeConflicts:0 numYields:0 reslen:109 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_command 192ms
+2016-09-14T22:53:32.144+0700 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:20012 #5 (3 connections now open)
+2016-09-14T22:53:32.200+0700 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:20013 #6 (4 connections now open)
+2016-09-14T22:53:46.934+0700 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:20015 #7 (5 connections now open)
+2016-09-14T22:53:46.978+0700 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:20016 #8 (6 connections now open)
+2016-09-14T22:55:56.720+0700 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:20025 #9 (7 connections now open)
+2016-09-14T22:55:56.785+0700 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:20026 #10 (8 connections now open)
+2016-09-14T22:57:15.899+0700 I CONTROL  [thread1] CTRL_CLOSE_EVENT signal
+2016-09-14T22:57:15.900+0700 I CONTROL  [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2016-09-14T22:57:15.900+0700 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2016-09-14T22:57:15.930+0700 I CONTROL  [consoleTerminate] now exiting
+2016-09-14T22:57:15.930+0700 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2016-09-14T22:57:15.930+0700 I NETWORK  [consoleTerminate] closing listening socket: 624
+2016-09-14T22:57:15.930+0700 I NETWORK  [consoleTerminate] shutdown: going to flush diaglog...
+2016-09-14T22:57:15.930+0700 I NETWORK  [consoleTerminate] shutdown: going to close sockets...
+2016-09-14T22:57:15.930+0700 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2016-09-14T22:57:15.930+0700 I NETWORK  [conn4] end connection 127.0.0.1:19996 (7 connections now open)
+2016-09-14T22:57:15.930+0700 I NETWORK  [conn9] end connection 127.0.0.1:20025 (7 connections now open)
+2016-09-14T22:57:15.930+0700 I NETWORK  [conn7] end connection 127.0.0.1:20015 (7 connections now open)
+2016-09-14T22:57:15.930+0700 I NETWORK  [conn3] end connection 127.0.0.1:19995 (7 connections now open)
+2016-09-14T22:57:15.930+0700 I NETWORK  [conn6] end connection 127.0.0.1:20013 (7 connections now open)
+2016-09-14T22:57:15.930+0700 I NETWORK  [conn10] end connection 127.0.0.1:20026 (7 connections now open)
+2016-09-14T22:57:15.930+0700 I NETWORK  [conn8] end connection 127.0.0.1:20016 (7 connections now open)
+2016-09-14T22:57:15.931+0700 I NETWORK  [conn5] end connection 127.0.0.1:20012 (4 connections now open)
+2016-09-14T22:57:16.364+0700 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2016-09-14T22:57:16.365+0700 I CONTROL  [consoleTerminate] dbexit:  rc: 12
